@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <title>Hello World!</title>
+    
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/static/css/style.css" />
+      </head>
+
+<body>
+
+    <div class="container-boton">
+        <a href="https://wa.me/3624883252?text=Su%20Consulta%20no%20Molesta" target="_blank">
+            <img class="boton" src="https://cdn.glitch.me/9747dedf-7a25-4eaf-b9cf-a7180a0710bb/whatsapp-logo-png-2280.png?v=1640039551180" alt="">
+        </a>
+    </div>
+
+
+    <header>
+      <nav class="navbar navbar-expand{-sm|-md|-lg|-xl} navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">logo</a>
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conocenos</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>
+          Nombre del Negocio
+        </h1>
+        <p>
+          slogan
+        </p>
+        <button type="button" class="btn btn-primary">
+          Conoce mas de Nosotros
+        </button>
+      </div>
+    </header>
+  
+    {% block contenido %}
+    <!-- CONTENIDO DINAMICO -->
+    {% endblock contenido %}
+
+</body>
+</html>
