@@ -31,13 +31,13 @@
         <a class="navbar-brand" href="#">logo</a>
         <ul class="nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
+            {% block ahref1 %} {% endblock ahref1 %}
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
+            {% block ahref2 %} {% endblock ahref2 %}
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Conocenos</a>
+            {% block ahref3 %}{% endblock ahref3 %}
           </li>
         </ul>
       </nav>
@@ -50,9 +50,11 @@
         <p>
           slogan
         </p>
-        <button type="button" class="btn btn-primary">
-          Conoce mas de Nosotros
-        </button>
+        <a href='../conocenos/'>
+          <button type="button" class="btn btn-primary">
+            Conoce mas de Nosotros
+          </button>
+        </a>
       </div>
     </header>
   
